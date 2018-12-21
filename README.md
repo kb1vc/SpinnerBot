@@ -41,25 +41,25 @@ Mechanical
 Printed Parts:
 -----
 
-3r1 bot
+### 3r1 bot
 
-1 PlainBase (frame)
-1 WheelDriveMountSplit  (builds two motor mounts)
-1 Scoop_3r1_wheels
-[
-  1 Scoop_3r1_wheels
-or
-  1 SpinnerMotorMount_3r1
-  1 HorizontalSpinner
-]
+* 1 PlainBase (frame)
+* 1 WheelDriveMountSplit  (builds two motor mounts)
+* 1 Scoop_3r1_wheels
+* either
+  * 1 Scoop_3r1_wheels
+* or
+  * 1 SpinnerMotorMount_3r1
+  * 1 HorizontalSpinner
+  
 
-2r6 bot
-1 PlainBase (frame)
-1 WheelDriveMountSplit  (builds two motor mounts)
-1 Scoop_2r6_wheels
-[
-  1 Scoop 2r6_wheels
-or
-  1 SpinnerMotorMount_2r6
-  1 HorizontalSpinner
-]
+### 2r6 bot
+* 1 PlainBase (frame)
+* 1 WheelDriveMountSplit  (builds two motor mounts)
+* 1 Scoop_2r6_wheels
+* either
+  * 1 Scoop 2r6_wheels
+* or
+  * 1 SpinnerMotorMount_2r6
+  * 1 HorizontalSpinner
+
