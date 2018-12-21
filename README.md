@@ -25,18 +25,22 @@ Sumus quod sumus.
 
 Electronics:
 ----
-Sparkfun RedBoard or Arduino Uno
-Sparkfun Ardumoto board
-2N3904 transistor
-150 ohm resistor
-Misc. wire
-7.2V LiPo battery and connectors
+* Sparkfun RedBoard or Arduino Uno
+* Sparkfun Ardumoto board
+* 2N3904 transistor
+* 150 ohm resistor
+* Misc. wire
+* 7.2V LiPo battery and connectors
 
 Mechanical
 -----
-2 3/8x 6-32 machine screws and 2 6-32 nuts (for spinner weight)
+* Spinner Weight
+  * 2 3/8x 6-32 machine screws
+  * 2 6-32 nuts (for spinner weight)
 
-2 2.6 inch or 3.1 inch wheels and motors -- Sparkfun ROB-13260 65mm (2.6 inch) wheels
+* Making it Move
+  * 2 2.6 inch or 3.1 inch wheels
+  * 2 Right angle motors -- Sparkfun ROB-13260 has both wheels and motors
 
 Printed Parts:
 -----
