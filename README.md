@@ -51,7 +51,7 @@ Printed Parts:
 * or
   * 1 SpinnerMotorMount_3r1
   * 1 HorizontalSpinner
-  
+  * 2 BatteryClip
 
 ### 2r6 bot
 * 1 PlainBase (frame)
@@ -62,4 +62,5 @@ Printed Parts:
 * or
   * 1 SpinnerMotorMount_2r6
   * 1 HorizontalSpinner
-
+  * 2 BatteryClip
+  
