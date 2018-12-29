@@ -106,6 +106,11 @@ void loop() {
   float v = ((v_mag - NEUTRAL) >> DIVSHIFT); 
   float h = ((h_mag - NEUTRAL) >> DIVSHIFT);
 
+  // don't know why but left turns seem to be 
+  // a bit too snappy
+  // unless we trim the gain a bit...  
+  // h = h * ((h > 0) ? 0.66 : 0.5); 
+  h = h * 0.25;
   if((v_mag == 0) || (h_mag == 0)) {
     v = 0.0; 
     h = 0.0;
@@ -114,7 +119,9 @@ void loop() {
   if(fabs(v) < 2.0) v = 0.0; 
   if(fabs(h) < 2.0) h = 0.0; 
   
-  float spd = 0.1 * (v * v + h * h);
+  float spd;
+  // spd = 0.1 * (v * v + h * h);
+  spd = 0.2 * v * v;
   
   if(spd < 10) spd = 0.0; 
   if(fabs(h) > (5.0 * fabs(v))) spd = 0.0; 
