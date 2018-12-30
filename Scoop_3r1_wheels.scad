@@ -23,7 +23,23 @@ module AccessoryHoles()
   }
 }
 
-module Scoop() {
+module Rib() {
+  translate([0, 0, -0.5 * Thickness])
+    linear_extrude(height = Thickness)
+      polygon(points = [ [MountWidth, Rise + 0.001], 
+                         [MountWidth + Rise + 0.001, 0.001],
+	  	         [MountWidth, 0.02] ]);
+}
+
+module Ribs() {
+  translate([0, 0, -0.45 * ScoopLength])
+    Rib();
+  translate([0, 0, 0.45 * ScoopLength])
+    Rib();
+    
+}
+
+module ScoopBody() {
 difference() {
   translate([0, 0, -(0.5 * ScoopLength + epsilon)])
     linear_extrude(height = ScoopLength)
@@ -37,5 +53,11 @@ difference() {
 }
 }
 
-Scoop();
+module Scoop() {
+  union() {
+    ScoopBody();
+    Ribs();
+  }
+}
 
+Scoop();
